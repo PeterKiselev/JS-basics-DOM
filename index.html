@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="title title--main">JS basics</h1>
+    <main>
+        <div class="container">
+            <div class="grid">
+                <section class="work">
+                    <h2 class="title"></h2>
+                    <label for="fieldName">Запросите у пользователя его имя и выведите в ответ: «Привет, его
+                        имя!».</label>
+                    <input type="text" id="fieldName" pattern="2-[0-9]{3}-[0-9]{3}" placeholder='Введите Ваше имя'>
+                    <button class="btn btn--name">Get Name</button>
+                    <p><span class="output output--name"></span></p>
+                </section>
+                <section class="work">
+                    <h2 class="title"></h2>
+                    <label for="fieldUserYear">Запросите у пользователя год его рождения, посчитайте, сколько ему лет и
+                        выведите результат. Текущий год укажите в коде как константу.</label>
+                    <input type="number" id="fieldUserYear" placeholder="Введите год Вашего рождения" min="1900"
+                        max="2020">
+                    <button class="btn btn--year">Get Year</button>
+                    <p>
+                        Ваш возраст: <span class="output output--year"></span>
+                    </p>
+                </section>
+                <section class="work">
+                    <h2 class="title"></h2>
+                    <label for="fieldSide">Запросите у пользователя длину стороны квадрата и выведите периметр такого
+                        квадрата.</label>
+                    <input type="number" id="fieldSide" placeholder="Введите сторону квадрата" min="0">
+                    <button class="btn btn--perimeter">Get perimeter</button>
+                    <p>Периметр квадарата равен:
+                        <span class="output output--perimeter"></span>
+                        каких-то единиц)
+                    </p>
+                </section>
+                <section class="work">
+                    <h2 class="title"></h2>
+                    <label for="fieldRadius">Запросите у пользователя радиус окружности и выведите площадь такой
+                        окружности.</label>
+                    <input type="number" id="fieldRadius" placeholder="Введите радиус окружности" min="0">
+                    <button class="btn btn--square">Get square</button>
+                    <p>Площадь окружности равен:
+                        <span class="output output--square"></span>
+                        каких-то единиц =)
+                    </p>
+                </section>
+                <section class="work">
+                    <h2 class="title"></h2>
+                    <label for="fieldUsd">Реализуйте конвертор валют. Пользователь вводит доллары, программа переводит в
+                        евро. Курс валюты храните в константе.</label>
+                    <input type="number" id="fieldUsd" placeholder="Сколько долларов поменять в EURO, $" min="0">
+                    <p>Получится:
+                        <span class="output output--convert"></span>
+                        &#8364;
+                    </p>
+                    <!--Currency Converter widget by FreeCurrencyRates.com -->
+                    <div id='gcw_mainFXrGSf7Yi' class='gcw_mainFXrGSf7Yi'></div>
+                    <a id='gcw_siteFXrGSf7Yi' href='https://freecurrencyrates.com/ru/'>FreeCurrencyRates.com</a>
+                    <script>function reloadFXrGSf7Yi() { var sc = document.getElementById('scFXrGSf7Yi'); if (sc) sc.parentNode.removeChild(sc); sc = document.createElement('script'); sc.type = 'text/javascript'; sc.charset = 'UTF-8'; sc.async = true; sc.id = 'scFXrGSf7Yi'; sc.src = 'https://freecurrencyrates.com/ru/widget-vertical?iso=USD-EUR-XUL&df=2&p=FXrGSf7Yi&v=fits&source=fcr&width=350&width_title=0&firstrowvalue=1&thm=666666,000000,333333,333333,FFFFFF,666666,555555,ffffff,ffffff&title=&tzo=-180'; var div = document.getElementById('gcw_mainFXrGSf7Yi'); div.parentNode.insertBefore(sc, div); } reloadFXrGSf7Yi(); </script>
+                    <!-- put custom styles here: .gcw_mainFXrGSf7Yi{}, .gcw_headerFXrGSf7Yi{}, .gcw_ratesFXrGSf7Yi{}, .gcw_sourceFXrGSf7Yi{} -->
+                    <!--End of Currency Converter widget by FreeCurrencyRates.com -->
+                </section>
+                <section class="work">
+                    <h2 class="title"></h2>
+                    <label for="fieldMemory">Пользователь указывает объем флешки в Гб. Программа должна посчитать, сколько файлов размером в 820 Мб помещается на флешку.</label>
+                    <input type="number" id="fieldMemory" placeholder="Введите объем флешки, Гб" min="0">
+                    <p>Поместится:
+                        <span class="output output--memory"></span>
+                        файл<span class="ending ending--memory"></span>
+                    </p>
+                </section>
+                <section class="work">
+                    <h2  class="title"></h2>
+                    <p>Пользователь вводит сумму денег в кошельке и цену одной шоколадки. Программа выводит, сколько шоколадок может купить пользователь, и сколько сдачи у него останется.</p>
+                    <input type="number" id="fieldSumMoney"   placeholder="Сколько у Вас денег в кошельке, грн" min="0" step=".01">
+                    <input type="number" id="fieldPriceCandy" placeholder="Одна шоколадка стоит, грн" min="0" step=".01">
+                    <button class="btn btn--result-candy">get candy</button>
+                    <p>Вам хватит на:
+                        <span class="output output--amount-candy"></span>
+                        шоколад<span class="ending ending--candy"></span>
+                        и еще останется:
+                        <span class="output output--short-change"></span>
+                        <span>грн</span>
+                    </p>
+                </section>
+                <section class="work">
+                    <h2 class="title"></h2>
+                    <label for="fieldNumThreeDigit">Запросите у пользователя трехзначное число и выведите его задом наперед. Для решения задачи вам понадобится оператор % (остаток от деления).</label>
+                    <input type="number" id="fieldNumThreeDigit" placeholder="Введите трехзначное число" min="100" max="999">
+                    <p>New number:
+                        <span class="output output--number"></span>
+                    </p>
+                </section>
+                <section class="work work--full">
+                    <h3>Вам понравилось выполнение заданий? = )</h3>
+                    <button class="btn btn--start">Да</button>
+                </section>
+            </div>
+        </div>
+        
+    </main>
+    
+    <script src="js/app.js"></script>
+    <canvas id="c"></canvas>
+    <script src="js/fw.js"></script>
+</body>
+
+</html>

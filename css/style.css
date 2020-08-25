@@ -1,0 +1,104 @@
+html { font-size: 10px; }
+
+body {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    background-image: url(../img/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(25, 78, 226);
+}
+
+.title--main {
+    color: #fff;
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 20px;
+    }
+}
+
+.work {
+    background-color: rgba(238, 238, 238, .7);
+    padding: 20px;
+    text-align: center;
+    min-height: 250px;
+}
+
+.work--full {
+    grid-column: span 2;
+}
+
+input {
+    display: block;
+    width: 75%;
+    margin: 20px auto;
+    padding: 10px;
+    outline: none;
+    font-size: inherit;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 1em 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    background-color: yellowgreen;
+    cursor: pointer;
+    border: 2px dashed yellowgreen;
+    transition: all .2s ease-in;
+}
+.btn:hover {
+    border-color: #000;
+    transition: all .2s ease-in;
+}
+.btn:focus { outline: none; }
+
+.output { 
+    font-size: 1.3em; 
+    letter-spacing: .05em; 
+    font-weight: 900;
+}
+
+.danger { color: red; }
+
+.success { color: rgb(156, 5, 149); }
+
+body {
+    position: relative;
+}
+
+canvas#c {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
