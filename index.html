@@ -63,16 +63,11 @@
                         <span class="output output--convert"></span>
                         &#8364;
                     </p>
-                    <!--Currency Converter widget by FreeCurrencyRates.com -->
-                    <div id='gcw_mainFXrGSf7Yi' class='gcw_mainFXrGSf7Yi'></div>
-                    <a id='gcw_siteFXrGSf7Yi' href='https://freecurrencyrates.com/ru/'>FreeCurrencyRates.com</a>
-                    <script>function reloadFXrGSf7Yi() { var sc = document.getElementById('scFXrGSf7Yi'); if (sc) sc.parentNode.removeChild(sc); sc = document.createElement('script'); sc.type = 'text/javascript'; sc.charset = 'UTF-8'; sc.async = true; sc.id = 'scFXrGSf7Yi'; sc.src = 'https://freecurrencyrates.com/ru/widget-vertical?iso=USD-EUR-XUL&df=2&p=FXrGSf7Yi&v=fits&source=fcr&width=350&width_title=0&firstrowvalue=1&thm=666666,000000,333333,333333,FFFFFF,666666,555555,ffffff,ffffff&title=&tzo=-180'; var div = document.getElementById('gcw_mainFXrGSf7Yi'); div.parentNode.insertBefore(sc, div); } reloadFXrGSf7Yi(); </script>
-                    <!-- put custom styles here: .gcw_mainFXrGSf7Yi{}, .gcw_headerFXrGSf7Yi{}, .gcw_ratesFXrGSf7Yi{}, .gcw_sourceFXrGSf7Yi{} -->
-                    <!--End of Currency Converter widget by FreeCurrencyRates.com -->
                 </section>
                 <section class="work">
                     <h2 class="title"></h2>
-                    <label for="fieldMemory">Пользователь указывает объем флешки в Гб. Программа должна посчитать, сколько файлов размером в 820 Мб помещается на флешку.</label>
+                    <label for="fieldMemory">Пользователь указывает объем флешки в Гб. Программа должна посчитать,
+                        сколько файлов размером в 820 Мб помещается на флешку.</label>
                     <input type="number" id="fieldMemory" placeholder="Введите объем флешки, Гб" min="0">
                     <p>Поместится:
                         <span class="output output--memory"></span>
@@ -80,10 +75,13 @@
                     </p>
                 </section>
                 <section class="work">
-                    <h2  class="title"></h2>
-                    <p>Пользователь вводит сумму денег в кошельке и цену одной шоколадки. Программа выводит, сколько шоколадок может купить пользователь, и сколько сдачи у него останется.</p>
-                    <input type="number" id="fieldSumMoney"   placeholder="Сколько у Вас денег в кошельке, грн" min="0" step=".01">
-                    <input type="number" id="fieldPriceCandy" placeholder="Одна шоколадка стоит, грн" min="0" step=".01">
+                    <h2 class="title"></h2>
+                    <p>Пользователь вводит сумму денег в кошельке и цену одной шоколадки. Программа выводит, сколько
+                        шоколадок может купить пользователь, и сколько сдачи у него останется.</p>
+                    <input type="number" id="fieldSumMoney" placeholder="Сколько у Вас денег в кошельке, грн" min="0"
+                        step=".01">
+                    <input type="number" id="fieldPriceCandy" placeholder="Одна шоколадка стоит, грн" min="0"
+                        step=".01">
                     <button class="btn btn--result-candy">get candy</button>
                     <p>Вам хватит на:
                         <span class="output output--amount-candy"></span>
@@ -95,23 +93,26 @@
                 </section>
                 <section class="work">
                     <h2 class="title"></h2>
-                    <label for="fieldNumThreeDigit">Запросите у пользователя трехзначное число и выведите его задом наперед. Для решения задачи вам понадобится оператор % (остаток от деления).</label>
-                    <input type="number" id="fieldNumThreeDigit" placeholder="Введите трехзначное число" min="100" max="999">
+                    <label for="fieldNumThreeDigit">Запросите у пользователя трехзначное число и выведите его задом
+                        наперед. Для решения задачи вам понадобится оператор % (остаток от деления).</label>
+                    <input type="number" id="fieldNumThreeDigit" placeholder="Введите трехзначное число" min="100"
+                        max="999">
                     <p>New number:
                         <span class="output output--number"></span>
                     </p>
                 </section>
                 <section class="work work--full">
+                    <h2 class="title"></h2>
                     <h3>Вам понравилось выполнение заданий? = )</h3>
                     <button class="btn btn--start">Да</button>
                 </section>
             </div>
         </div>
-        
+
     </main>
-    
+
     <script src="js/app.js"></script>
-    <canvas id="c"></canvas>
+    <canvas id="c" width="auto"></canvas>
     <script src="js/fw.js"></script>
 </body>
 

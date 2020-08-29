@@ -31,11 +31,12 @@ body {
 .grid {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 20px;
     justify-content: center;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
         padding-bottom: 20px;
@@ -49,8 +50,10 @@ body {
     min-height: 250px;
 }
 
-.work--full {
-    grid-column: span 2;
+@media screen and (min-width: 768px) {
+    .work--full {
+        grid-column: span 2;
+    }
 }
 
 input {
@@ -60,6 +63,7 @@ input {
     padding: 10px;
     outline: none;
     font-size: inherit;
+    text-overflow: ellipsis;
 }
 
 .btn {
